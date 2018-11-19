@@ -166,14 +166,14 @@ GRect slotFrame(int i) {
     }
 
     if (i<2) {
-      y =  offsetY;
+      y =  28 + offsetY;
     } else {
-      y = offsetY + VSPACE + h;
+      y = 28 + offsetY + VSPACE + h;
     }
   } else {
     // Date slot -> small digits
-    x = (SCREENW-(14+8*w))/2 + (i-4)*2 + (i-4)*w;
-    y = offsetY + VSPACE + DHSPACE + 10*TILEH;
+    x = (SCREENW-(14+8*w))/2 -3 + (i-4)*3 + (i-4)*w;
+    y = 2;
   }
 
   return GRect(x, y, w, h);
